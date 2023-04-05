@@ -2,7 +2,7 @@ const fs = require('fs');
 
 class ProductManager {
     constructor() {
-        this.path = './productsFiles/products.txt';
+        this.path = './products-list.txt';
     }
   
     async addProduct(title, description, price, thumbnail, code, stock) {
