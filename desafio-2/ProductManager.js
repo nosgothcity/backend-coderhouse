@@ -132,27 +132,27 @@ const productManager = new ProductManager();
 const generator = async () => {
     await productManager.addProduct('Galaxy S22 Ultra', 'Telefono celular Samsung Galaxy S22 Ultra Rojo', 800, 'imagen_samsung', 111, 5);
     await productManager.addProduct('iPhone 14 Plus', 'Telefono celular Apple iPhone 14 Plus Negro', 1100, 'imagen_iphone', 112, 10);
-    await productManager.addProduct('HUAWEI P50', 'Telefono celular HUAWEI P50 8GB + 256GB de 6.5', 500, 'imagen_huawei', 113, 4);
-    // Tratando de agregar un articulo ya agregado.
-    await productManager.addProduct('Galaxy S22 Ultra', 'Telefono celular Samsung Galaxy', 800, 'imagen', 111, 5);
+    // await productManager.addProduct('HUAWEI P50', 'Telefono celular HUAWEI P50 8GB + 256GB de 6.5', 500, 'imagen_huawei', 113, 4);
+    // // Tratando de agregar un articulo ya agregado.
+    // await productManager.addProduct('Galaxy S22 Ultra', 'Telefono celular Samsung Galaxy', 800, 'imagen', 111, 5);
 
-    // Buscando producto
-    await productManager.getProductById(2);
+    // // Buscando producto
+    // await productManager.getProductById(2);
 
-    // Lista de productos
-    await productManager.getProducts();
+    // // Lista de productos
+    // await productManager.getProducts();
 
-    // Actualizacion de productos.
-    await productManager.updateProduct(2, {title: 'TITULO TEST', description: 'DESCRIPCION TEST'});
+    // // Actualizacion de productos.
+    // await productManager.updateProduct(2, {title: 'TITULO TEST', description: 'DESCRIPCION TEST'});
 
-    // Lista de productos para visualizar los cambios hechos anteriormente.
-    await productManager.getProducts();
+    // // Lista de productos para visualizar los cambios hechos anteriormente.
+    // await productManager.getProducts();
 
-    // Lista de productos para visualizar los cambios hechos anteriormente.
-    await productManager.deleteProduct(3);
+    // // Lista de productos para visualizar los cambios hechos anteriormente.
+    // await productManager.deleteProduct(3);
 
-    // Lista de productos para visualizar los cambios luego de eliminar un elemento.
-    await productManager.getProducts();
+    // // Lista de productos para visualizar los cambios luego de eliminar un elemento.
+    // await productManager.getProducts();
 };
 
 generator();
